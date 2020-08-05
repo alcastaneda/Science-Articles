@@ -1,0 +1,13 @@
+<section>
+  <div class="hero">
+    <img src="assets/images/default-background.jpg" alt="" />
+    <h1>Articles</h1>
+  </div>
+  <article *ngFor="let article of articleService.articles">
+    <a routerLink="/article/{{ article.id }}"
+      ><h3>{{ article.title }}</h3></a
+    >
+    <p>{{ article.short_description }}</p>
+  </article>
+  <button *ngIf="canLoadMore" (click)="fetchArticles()">Load More</button>
+</section>

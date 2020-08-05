@@ -1,0 +1,34 @@
+@import "../../../../variables.scss";
+
+section {
+  .hero h1 {
+    font-size: $large;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: $large;
+    color: $color-accent;
+  }
+
+  article {
+    border: 1px solid gray;
+    margin: 0 $medium;
+    padding: 1rem;
+    a {
+      text-decoration: none;
+    }
+  }
+
+  button {
+    border: none;
+    font-size: 1.5rem;
+    background: $color-primary;
+    color: $color-light;
+    margin: 1rem auto;
+    display: block;
+    padding: 1rem 6rem;
+  }
+}

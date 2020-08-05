@@ -1,0 +1,16 @@
+<section *ngIf="article">
+  <div class="hero">
+    <img
+      src="{{ article.cover.large || 'assets/images/default-background.jpg' }}"
+      alt=""
+    />
+    <div class="hero-content">
+      <p>Published on {{ article.published_at | date: "mediumDate" }}</p>
+      <h1>{{ article.title }}</h1>
+      <p>By {{ article.author_info }}</p>
+    </div>
+  </div>
+  <h3>Abstract</h3>
+  <p class="abstract">{{ article.abstract }}</p>
+  <a routerLink="/">View all articles</a>
+</section>
